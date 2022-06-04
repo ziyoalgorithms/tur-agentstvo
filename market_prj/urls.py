@@ -11,6 +11,7 @@ urlpatterns = [
     path('list_of_accommodations/', include('mainapp.urls', namespace='acc')),
     path('auth/', include('authapp.urls', namespace='auth')),
     path('basket/', include('basketapp.urls', namespace='basket')),
+    path('order/', include('ordersapp.urls', namespace='order')),
 ]
 
 

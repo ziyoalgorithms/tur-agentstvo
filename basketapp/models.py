@@ -38,4 +38,4 @@ class Basket(models.Model):
 
     @staticmethod
     def get_items(user):
-        return user.basket.select_related().oreder_by('accommodation_country')
+        return user.basket.select_related().order_by('accommodation__country')
