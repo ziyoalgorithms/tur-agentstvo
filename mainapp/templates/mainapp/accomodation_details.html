@@ -21,10 +21,12 @@
                     <br><br><br><br>
                 </div>
                 <div class="float-right">
+                    {% if user.is_authenticated %}
                     <button class="btn  btn-danger ">
                         <a style="color: white; text-decoration: none"
                            href="{% url 'basket:add' accommodation.pk %}">Забронировать</a>
                     </button>
+                    {% endif %}
                 </div>
             </div>
 
